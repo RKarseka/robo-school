@@ -1,1 +1,1 @@
-console.log('components');
+import "./_functions";
