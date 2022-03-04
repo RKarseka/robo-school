@@ -5,7 +5,12 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 40px;
+
+    @include hight-tablet {
+      grid-gap: 20px;
+    }
   }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -31,6 +36,10 @@
 
       .tariffs__descr {
         color: var(--light-color);
+      }
+
+      @include hight-desktop {
+        transform: scale(1);
       }
     }
   }
@@ -70,6 +79,14 @@
     line-height: 160%;
     text-align: center;
     color: var(--dark-color);
+
+    @include hight-desktop {
+      font-size: 45px;
+    }
+
+    @include hight-tablet {
+      font-size: 33px;
+    }
   }
   &__descr {
     margin: 0;
@@ -84,5 +101,10 @@
   &__btn {
     margin-top: 60px;
     min-width: 100%;
+
+    @include hight-tablet {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
   }
 }

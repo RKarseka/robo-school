@@ -15,4 +15,8 @@
     line-height: 160%;
     color: var(--light-color);
   }
+
+  @include hight-tablet {
+    display: none;
+  }
 }
