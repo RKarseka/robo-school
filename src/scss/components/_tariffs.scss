@@ -1,12 +1,6 @@
 .tariffs {
   padding-top: 0;
 
-  .tariffs__title {
-  }
-  .section-title {
-  }
-  .list-reset {
-  }
   &__list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
