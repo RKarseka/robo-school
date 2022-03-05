@@ -4,4 +4,8 @@
   line-height: 160%;
 
   color: var(--light-color);
+
+  @include mobile {
+    font-size: 16px;
+  }
 }

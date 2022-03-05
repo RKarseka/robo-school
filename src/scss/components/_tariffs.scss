@@ -9,6 +9,10 @@
     @include hight-tablet {
       grid-gap: 20px;
     }
+
+    @include small-tablet {
+      grid-template-columns: repeat(8, 1fr);
+    }
   }
 
   &__item {
@@ -42,6 +46,10 @@
         transform: scale(1);
       }
     }
+
+    @include small-tablet {
+      grid-column: 8 span;
+    }
   }
   &__subtitle {
     display: flex;
@@ -72,6 +80,7 @@
       background-color: currentColor;
     }
   }
+
   &__price {
     margin-bottom: 20px;
     font-weight: 600;
@@ -88,6 +97,7 @@
       font-size: 33px;
     }
   }
+
   &__descr {
     margin: 0;
     margin-bottom: auto;

@@ -6,10 +6,19 @@
   background-position: bottom center;
   background-size: cover;
 
+  @include mobile {
+    font-size: 20px;
+    padding: 40px 0;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 40px;
+
+    @include mobile {
+      grid-gap: unset;
+    }
   }
   &__left {
     grid-column: 5 span;
@@ -41,6 +50,12 @@
     font-size: 36px;
     line-height: 130%;
     color: var(--light-color);
+
+    @include mobile {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
   }
 
   &__descr {
@@ -50,6 +65,11 @@
     font-size: 20px;
     line-height: 130%;
     color: var(--light-color);
+
+    @include mobile {
+      // font-size: 16px;
+      text-align: center;
+    }
   }
 
   &__form {

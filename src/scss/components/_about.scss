@@ -10,6 +10,11 @@
     margin-bottom: 60px;
 
     color: var(--dark-color);
+
+    @include mobile {
+      font-size: 20px;
+    }
+
     &-hightlight {
       font-weight: 600;
     }
@@ -19,6 +24,11 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 40px;
+
+    @include mobile {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 12px;
+    }
   }
 
   &__item {
@@ -26,6 +36,10 @@
 
     @include hight-desktop {
       grid-column: 6 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
     }
   }
 
@@ -35,6 +49,10 @@
     font-weight: 600;
 
     color: var(--accent-color);
+    @include mobile {
+      text-align: center;
+      font-size: 60px;
+    }
   }
 
   &__text {
@@ -45,5 +63,10 @@
     font-weight: 400;
 
     color: var(--text-color);
+
+    @include mobile {
+      text-align: center;
+      font-size: 16px;
+    }
   }
 }

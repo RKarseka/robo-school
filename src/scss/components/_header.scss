@@ -5,9 +5,15 @@
   width: 100%;
   padding: 30px 0;
 
+  @include mobile {
+    padding: 8px 0;
+  }
+
   &__container {
     @include flex-all-sb;
+
     @include hight-tablet {
+      align-items: center;
       justify-content: initial;
     }
   }
